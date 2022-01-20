@@ -1,42 +1,54 @@
 <!DOCTYPE html>
 <html>
 <html lang="es">
-  <head> <!-- Indicamos los parametros del documento, no es visible para el usuario-->
-    <meta charset="utf-8">
-    <!--Para que el navegador pueda entender caracteres especiales-->
-    <meta name="description" content="Validador de tarjetas de crédito" />
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <!-- Descripción que aparece en los navegadores; Width: permite definir la apariencia de la página en diferentes dispositivos-->
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-    <!-- Enlazar con los estilos -->
-  </head>
-  <body>
-    <header>
+
+<head>
+  <!-- Indicamos los parametros del documento, no es visible para el usuario-->
+  <meta charset="utf-8">
+  <!--Para que el navegador pueda entender caracteres especiales-->
+  <meta name="description" content="Validador de tarjetas de crédito" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <!-- Descripción que aparece en los navegadores; Width: permite definir la apariencia de la página en diferentes dispositivos-->
+  <title>Tarjeta de crédito válida</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Enlazar con los estilos -->
+</head>
+
+<body>
+  <header>
     <nav></nav>
-    </header>
-    <main>
+  </header>
+  <main>
     <footer></footer>
     <h1> ¿Estás listo para horas de diversión?</h1>
 
-    <section> <!-- es una practica que usar el div-->
+    <section>
+      <!-- es una mejor practica que usar el div-->
       <figure>
         <img src="https://i.imgur.com/h5XqxR7.jpg" alt="fondo pacman">
         <!-- el alt se utiliza para describir la imagen por si algo falla para saber que iba en ese lugar -->
       </figure>
     </section>
-    </main>
-    <form action=""
-    <label for="nameUsuar">
-      <span> Ingresa tu nombre</span>
-      <!-- se usa para la pregunta que será visible para el usuario-->
-      <input type="text" name="nameUsuar" value="" autocomplete="name" placeholder= "Ingresa tu nombre" required>
-      <!-- Placeholder: lo usamos para las letras que va sobre el campo a llenar -->
-      <!--value sirve para saber cual fue el dato que me envio el usuario cuando lo envio -->
-      <!-- required ayuda a que sea un campo obligatorio  -->
+  </main>
+  <form action="" <label for="nameUsuar">
+    <span> Ingresa tu nombre</span>
+    <!-- se usa para la pregunta que será visible para el usuario-->
+    <input type="text" name="nameUsuar" value="" autocomplete="name" placeholder="Ingresa tu nombre" required>
+    <!-- Placeholder: lo usamos para las letras que va sobre el campo a llenar -->
+    <!--value sirve para saber cual fue el dato que me envio el usuario cuando lo envio -->
+    <!-- required ayuda a que sea un campo obligatorio  -->
     </label>
-      <button type="button">EMPEZAR</button>
-      <!-- Es mejor utilizar el botón button que type submit pues el primero permite ser personalizado y el segundo no-->
-    </form>
-  </body>
+    <button type="button">EMPEZAR</button>
+    <!-- Es mejor utilizar el botón button que type submit pues el primero permite ser personalizado y el segundo no-->
+  </form>
+
+  <p>
+    <!-- Creación de enlaces directos dentro de la página HTML-->
+    <a href="file:///C:/Users/Hp/Desktop/Laboratoria%202022/BOG004-card-validation/src/index2.html"
+      title="Empezar validación">Empezar la validación </a>
+  </p>
+
+</body>
+
 </html>
