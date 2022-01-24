@@ -11,9 +11,10 @@
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <!-- Descripción que aparece en los navegadores; Width: permite definir la apariencia de la página en diferentes dispositivos-->
   <title>Tarjeta de crédito válida</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./style.css" />
   <!-- Enlazar con los estilos -->
 </head>
+
 
 <body>
   <header>
@@ -21,33 +22,32 @@
   </header>
   <main>
     <footer></footer>
-    <h1> ¿Estás listo para horas de diversión?</h1>
+    <h1 class="pageone__title">¿Estás listo para horas de diversión?</h1>
+    <!-- se crea la clase para poder llamar este elemento en el CSS-->
 
-    <section>
+     <section>
       <!-- es una mejor practica que usar el div-->
-      <figure>
-        <img src="https://i.imgur.com/h5XqxR7.jpg" alt="fondo pacman">
-        <!-- el alt se utiliza para describir la imagen por si algo falla para saber que iba en ese lugar -->
-      </figure>
-    </section>
+      </section>
   </main>
+  <p>
   <form action="" <label for="nameUsuar">
-    <span> Ingresa tu nombre</span>
+    <span class="pageone__box"> Ingresa tu nombre</span>
     <!-- se usa para la pregunta que será visible para el usuario-->
-    <input type="text" name="nameUsuar" value="" autocomplete="name" placeholder="Ingresa tu nombre" required>
+    </p>
+    <input class="pageone__box.ingreso" type="text" name="nameUsuar" value="" autocomplete="name" placeholder="Ingresa tu nombre" required>
     <!-- Placeholder: lo usamos para las letras que va sobre el campo a llenar -->
     <!--value sirve para saber cual fue el dato que me envio el usuario cuando lo envio -->
     <!-- required ayuda a que sea un campo obligatorio  -->
     </label>
-    <button type="button">EMPEZAR</button>
-    <!-- Es mejor utilizar el botón button que type submit pues el primero permite ser personalizado y el segundo no-->
+    <p>
+      <button class="pageone__button" type="button">
+        <a href="file:///C:/Users/Hp/Desktop/Laboratoria%202022/BOG004-card-validation/src/index2.html"
+          title="validación">INICIAR</a>
+      </button>
+      <!-- Es mejor utilizar el botón button que type submit pues el primero permite ser personalizado y el segundo no-->
+      <!-- a,href se emplea para la creación de enlaces directos dentro de la página HTML-->
+    </p>
   </form>
-
-  <p>
-    <!-- Creación de enlaces directos dentro de la página HTML-->
-    <a href="file:///C:/Users/Hp/Desktop/Laboratoria%202022/BOG004-card-validation/src/index2.html"
-      title="Empezar validación">Empezar la validación </a>
-  </p>
 
 </body>
 

@@ -1,7 +1,152 @@
+*{
+padding: 0;
+margin: 0;
+/*Es una buena practica quitar las configuraciones predeterminadas de los buscadores*/
+box-sizing: border-box;
+/*permite usar el total del navegador sumando el padding y width*/
+background-color: rgb(17, 17, 17); /*se utiiza para dar fondo*/
+color:  rgb(248, 245, 245);  /*se utiliza para el color de la letra */
+
+background-image: url("https://i.imgur.com/h5XqxR7.jpg");
+background-repeat: repeat-x;
+  background-position: 0 0
+
+background-color: black;
+background-position: center;
+background-repeat: no-repeat;
+background-size: 300;% -300%
+
+/*background-repeat: no-repeat;
+background-position: center center;
+background-attachment: scroll;
+background-size: contain, cover;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+    -o-background-size: cover; */
+
+
+/*
+z-index: auto;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+    -o-background-size: cover; */
+
+
+}
+
+
+body{ 
+    
+    height: 635px;  
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    /*Funciona para determinar el tamaño de la caja en el navegador*/
+    border: 20px dotted rgb(32, 245, 245);
+    /*El tema del dotte funciona para que el borde tenga un diseño en especifico*/
+    /*El valor solido dentro del bordes es para hacerlo visible (si pongo none lo hago invisible) pero siempre existe*/
+    padding: 20px 35px 20px 35px;
+    /*Determina el tamaño de la caja interna los valores se ordenan según las manecillas del reloj*/
+    
+    /*Esta parte estan todas las modificaciones que se hace a la letra en general*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 200%; 
+    /*Aquí se pone en porcentaje para indicar que quiero este % según los valores predeterminados del HTML*/
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-weight: 400; /*esta es la negrilla*/
+    text-decoration: none;
+    text-transform: none;
+    line-height: 80px; /*esta es la distancia que existe entre los párrafos*/
+}
+
+
+.pageone__title{}
 
 
 
-/* Así se hacen comentarios en CSS */ 
+.pageone__box {}
 
-/* ID así se declara la variable que va a ser modificada */
-/* CLASS, así se declara la variable que va a ser modificada  */
+
+.pageone__box.ingreso {
+    
+}
+/*
+.pageone__button{
+color:rgb(245, 248, 248);
+font-size: 30px;
+text-decoration: none;
+border-radius: 50px;
+align-items: center;
+justify-content: center;
+padding: 27px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+position: absolute;
+    top: 450px;
+    right: 45%;
+    left: 45%; 
+    transform: translate(-50% -%50%);
+
+
+} */
+
+
+.pageone__button:hover{
+    border bottom: 20px solid;
+background-color: rgb(56, 190, 184)
+}
+.pageone__button:active{
+background-color: darkgrey;
+}
+
+.pageone__fondo{
+    background: transparent url("https://i.imgur.com/h5XqxR7.jpg") no-repeat local 0px 0px;
+
+}
+
+.pagetwo__title{}
+
+.pagetwo__subtitle{}
+
+.pagetwo__button{}
+.pagethree__titletrue.primary {}
+.pagethree__titletrue.second{}
+.pagethree__subtitltrue {}
+.pagethree__button.true{}
+
+.pagethree__titlefalse.primary {}
+.pagethree__titlefalse.second {}
+.pagethree__button.false {}
+
+
+
+.main-nav{
+    margin-top: 10px;
+    background-color: rgb(190, 20, 20);
+    list-style: none; /*el none significa que no se ven las viñetas*/
+    padding left: 0;
+    }
+    
+    
+    .main--nav_item{
+    display: inline-block; /*se emplea para no poner los elementos en lista sino de manera horizontal*/
+    }
+    
+    .main--nav_item a {
+    color: purple;
+    padding: 5px;
+    border-radius: 2px; /*se emplea para hacer los bordes redondos de cada cajita*/
+    text-decoration: none; /*se emplea para retirar el subrayado del texto*/
+    background-color: yellow;
+    }
+    
+    .main--nav_item a:hover{ /* el over se utiliza para indicar cuando el mouse esta sobre el texto*/
+    color: blue;    
+    }
+    .main--nav_item a:active{
+        color: brown;
+    }
+    .main--nav_item a::after{
+        content: "|";
+    }
