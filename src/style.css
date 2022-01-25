@@ -6,54 +6,40 @@ box-sizing: border-box;
 /*permite usar el total del navegador sumando el padding y width*/
 background-color: rgb(17, 17, 17); /*se utiiza para dar fondo*/
 color:  rgb(248, 245, 245);  /*se utiliza para el color de la letra */
-
+/*Caracteristicas de la imágen*/
 background-image: url("https://i.imgur.com/h5XqxR7.jpg");
-background-repeat: repeat-x;
-  background-position: 0 0
-
+background-repeat: repeat; /*Como la imágen es pequeñas se da la posibildad de repetirla*/
+background-attachment: fixed;  
+/*Esta función hizo que se ubicará en una esquina y a partir de ahí se multiplicara 
+también evito que se sobre pusiera una sobre otra, esto ayudo a solucionar el problema de repetición excesiva*/
 background-color: black;
-background-position: center;
-background-repeat: no-repeat;
-background-size: 300;% -300%
-
-/*background-repeat: no-repeat;
-background-position: center center;
-background-attachment: scroll;
-background-size: contain, cover;
--webkit-background-size: cover;
--moz-background-size: cover;
-    -o-background-size: cover; */
-
-
-/*
-z-index: auto;
--webkit-background-size: cover;
--moz-background-size: cover;
-    -o-background-size: cover; */
-
-
+/*esto lo puse para reforzar que el color del fondo fuera negro por sí la imágen no esta*/ 
+/*background-size: contain, cover; (No aplique esta función pues no me gusto la distorsión que generaba)*/
+/*Size es para ubicar el tamaño de la imágen */
+/*Size contain que la escala de la imagen mantenga las proporciones y ocupe el alto y ancho*/
+/*Size cover  funciona par que la escala de la imagen ocupe todo el contenedor*/
 }
 
-
 body{ 
-    
     height: 635px;  
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     /*Funciona para determinar el tamaño de la caja en el navegador*/
-    border: 20px dotted rgb(32, 245, 245);
-    /*El tema del dotte funciona para que el borde tenga un diseño en especifico*/
+    border: 15px dotted rgb(248, 244, 21);
+    /*El tema del dotted funciona para que el borde tenga un diseño en especifico*/
     /*El valor solido dentro del bordes es para hacerlo visible (si pongo none lo hago invisible) pero siempre existe*/
+    border-width: 20px;
+    /*Determina la dimensión de los botones o del margen en general*/
     padding: 20px 35px 20px 35px;
     /*Determina el tamaño de la caja interna los valores se ordenan según las manecillas del reloj*/
     
-    /*Esta parte estan todas las modificaciones que se hace a la letra en general*/
+    /*En esta parte estan todas las modificaciones que se hace a la letra en general*/
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 200%; 
+    font-size: 250%; 
     /*Aquí se pone en porcentaje para indicar que quiero este % según los valores predeterminados del HTML*/
-    letter-spacing: 1px;
+    letter-spacing: 3px;
     word-spacing: 1px;
     font-weight: 400; /*esta es la negrilla*/
     text-decoration: none;
@@ -61,92 +47,149 @@ body{
     line-height: 80px; /*esta es la distancia que existe entre los párrafos*/
 }
 
+.pageone__title{
+text-decoration-color: white;
+text-shadow: #FFF 0 -1px 4px, rgb(106, 231, 225) 0 -2px 10px, #045658 0 -10px 20px, rgb(42, 206, 206) 0 -18px 40px;
+/* esta opción crea el difuminado como luces de neon*/
+}
 
-.pageone__title{}
-
-
-
-.pageone__box {}
-
+.pageone__box {
+    font-size: 50px;
+    position: relative;
+    top: 50px;
+}
 
 .pageone__box.ingreso {
-    
+    font-size: 100px;
+    position: absolute;
+    top: 150px;
+    -webkit-text-stroke: 1px black; /*borde de las letras con relleno en blanco*/
+    color: white;
 }
-/*
 .pageone__button{
-color:rgb(245, 248, 248);
+color:rgb(7, 7, 7);
 font-size: 30px;
 text-decoration: none;
 border-radius: 50px;
+border-color: white;
+border-right: 200px;
 align-items: center;
 justify-content: center;
 padding: 27px;
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 position: absolute;
-    top: 450px;
+    top: 500px;
     right: 45%;
     left: 45%; 
-    transform: translate(-50% -%50%);
-
-
-} */
-
-
-.pageone__button:hover{
-    border bottom: 20px solid;
-background-color: rgb(56, 190, 184)
-}
-.pageone__button:active{
-background-color: darkgrey;
+    transform: translate(-50% -50%);
+/*En position se indica el lugar de la página donde quiero que este y su ubicación referente a las margenes*/
 }
 
-.pageone__fondo{
-    background: transparent url("https://i.imgur.com/h5XqxR7.jpg") no-repeat local 0px 0px;
-
+.pagetwo__title{
+text-decoration-color: rgb(234, 240, 234);
+text-shadow: #FFF 0 -1px 4px, rgb(241, 120, 7) 0 -2px 10px, #f1b40d 0 -10px 20px, rgb(248, 137, 10) 0 -18px 40px;
 }
 
-.pagetwo__title{}
+.pagetwo__subtitle{
+    font-size: 60px;
+    position: relative;
+    top: 45px;
+    font-weight: 400; /*espacio con negrilla*/
+    -webkit-text-stroke: 1px black; /*borde de las letras con relleno en blanco*/
+    color: white;
+}
 
-.pagetwo__subtitle{}
+.pagetwo__button{ 
+    color:rgb(7, 7, 7);
+    font-size: 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    border-color: white;
+    border-right: 200px;
+    align-items: center;
+    justify-content: center;
+    padding: 27px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+        top: 500px;
+        right: 45%;
+        left: 45%; 
+        transform: translate(-50% -50%);
+    }
 
-.pagetwo__button{}
-.pagethree__titletrue.primary {}
-.pagethree__titletrue.second{}
-.pagethree__subtitltrue {}
-.pagethree__button.true{}
+.pagethree__titletrue-primary{
+    font-size: 90px;
+text-decoration-color: rgb(234, 240, 234);
+text-shadow: #FFF 0 -1px 4px, rgb(6, 243, 18) 0 -2px 10px, #3bcf48 0 -10px 20px, rgb(12, 231, 30) 0 -18px 40px;
+}
+.pagethree__titletrue-second{
+    font-size: 80px;
+    position: relative;
+    top: 60px;
+    text-transform: uppercase; /*convierte el texto original en mayuscula*/
+    font-weight: 400; /*espacio con negrilla*/
+    -webkit-text-stroke: 1px black; /*borde de las letras con relleno en blanco*/
+    color: white;
+}
 
-.pagethree__titlefalse.primary {}
-.pagethree__titlefalse.second {}
-.pagethree__button.false {}
+.pagethree__subtitletrue{
+    font-size: 80px;
+    position: relative;
+    top: 200px;
+text-decoration-color: rgb(234, 240, 234);
+text-shadow: #FFF 0 -1px 4px, rgb(6, 243, 18) 0 -2px 10px, #3bcf48 0 -10px 20px, rgb(12, 231, 30) 0 -18px 40px;
+text-transform: uppercase /*convierte el texto original en mayuscula*/
+}
 
+.pagethree__button-true{ 
+    color:rgb(255, 254, 254);
+    font-size: 30px;
+    text-decoration: none;
+    border-radius: 80px;
+    border-color: white;
+    border-right: 200px;
+    align-items: center;
+    justify-content: center;
+    padding: 27px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+        top: 500px;
+        right: 45%;
+        left: 45%; 
+        transform: translate(-50% -50%);
+}
 
+.pagethree__titlefalse-primary{
+    font-size: 90px;
+text-decoration-color: rgb(243, 239, 239);
+text-shadow: #FFF 0 -1px 4px, rgb(187, 103, 78) 0 -2px 10px, #f5420c 0 -10px 20px, rgb(243, 24, 24) 0 -18px 40px;
+}
+.pagethree__titlefalse-second {
+    font-size: 80px;
+    position: relative;
+    top: 60px; 
+        -webkit-text-stroke: 2px black;
+        color: white; 
+}
 
-.main-nav{
-    margin-top: 10px;
-    background-color: rgb(190, 20, 20);
-    list-style: none; /*el none significa que no se ven las viñetas*/
-    padding left: 0;
-    }
-    
-    
-    .main--nav_item{
-    display: inline-block; /*se emplea para no poner los elementos en lista sino de manera horizontal*/
-    }
-    
-    .main--nav_item a {
-    color: purple;
-    padding: 5px;
-    border-radius: 2px; /*se emplea para hacer los bordes redondos de cada cajita*/
-    text-decoration: none; /*se emplea para retirar el subrayado del texto*/
-    background-color: yellow;
-    }
-    
-    .main--nav_item a:hover{ /* el over se utiliza para indicar cuando el mouse esta sobre el texto*/
-    color: blue;    
-    }
-    .main--nav_item a:active{
-        color: brown;
-    }
-    .main--nav_item a::after{
-        content: "|";
-    }
+.pagethree__button-false{
+    color:rgb(253, 249, 249);
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: 400; /*espacio con negrilla*/
+    -webkit-text-stroke: 2px black;
+        color: white; 
+    border-radius: 50px;
+    border-color: white;
+    border-right: 200px;
+    align-items: center;
+    justify-content: center;
+    padding: 27px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: normal;
+    position: absolute;
+    top: 470px;
+    right: 40%;
+    left: 40%; 
+    transform: translate(-50% -50%);
+}
