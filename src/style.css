@@ -4,7 +4,7 @@ margin: 0;
 /*Es una buena practica quitar las configuraciones predeterminadas de los buscadores*/
 box-sizing: border-box;
 /*permite usar el total del navegador sumando el padding y width*/
-background-color: rgb(17, 17, 17); /*se utiiza para dar fondo*/
+background-color: rgb(12, 12, 12); /*se utiiza para dar fondo*/
 color:  rgb(248, 245, 245);  /*se utiliza para el color de la letra */
 /*Caracteristicas de la imágen*/
 background-image: url("https://i.imgur.com/h5XqxR7.jpg");
@@ -120,7 +120,7 @@ text-shadow: #FFF 0 -1px 4px, rgb(241, 120, 7) 0 -2px 10px, #f1b40d 0 -10px 20px
 .pagethree__titletrue-primary{
     font-size: 90px;
 text-decoration-color: rgb(234, 240, 234);
-text-shadow: #FFF 0 -1px 4px, rgb(6, 243, 18) 0 -2px 10px, #3bcf48 0 -10px 20px, rgb(12, 231, 30) 0 -18px 40px;
+text-shadow: #FFF 0 -1px 4px, rgb(183, 186, 189) 0 -2px 10px, #3bcf48 0 -10px 20px, rgb(12, 231, 30) 0 -18px 40px;
 }
 .pagethree__titletrue-second{
     font-size: 80px;
