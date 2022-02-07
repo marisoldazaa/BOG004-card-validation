@@ -55,8 +55,17 @@ function maskify(arrayobtenerdatos){
 
 
 // VAMOS POR EL 4 INTENTO 
-var total = [datosindividuales].reduce(function(a, b){ return a + b; });
-console.log(total)
+//var total = [datosindividuales].reduce(function(a, b){ return a + b; });
+//console.log(total)
+
+let ubicandodatos = [(datosindividuales) (0, 2, 4, 6, 8,) false];
+
+alert( ubicandodatos.indexOf(0) ); // 1
+alert( ubicandodatos.indexOf(false) ); // 2
+alert( ubicandodatos.indexOf(null) ); // -1
+
+alert( ubicandodatos.includes(1) ); // true
+
 
 
 }};
