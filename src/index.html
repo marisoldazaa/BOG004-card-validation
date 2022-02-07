@@ -1,60 +1,57 @@
 <!DOCTYPE html>
-<html>
-<html lang="es">
+<html lang="en">
 
 <head>
-  <!-- Indicamos los parametros del documento, no es visible para el usuario-->
-  <meta charset="utf-8">
-  <!--Para que el navegador pueda entender caracteres especiales-->
-  <meta name="description" content="Validador de tarjetas de crédito" />
-  <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <!-- Descripción que aparece en los navegadores; Width: permite definir la apariencia de la página en diferentes dispositivos-->
-  <title>Tarjeta de crédito válida</title>
-  <link rel="stylesheet" href="./style.css" />
-   <!-- Enlazar con los estilos -->
-  
-  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="Homepage" href="src\index.html" /> -->
+    <!-- Pusiste esta parte por qué quieres que se cree una conexión entre esta parte y el HTML inicial, 
+    junto con el CSS inicial-->
+
 </head>
 
-
 <body>
-  <header>
-    <nav></nav>
-  </header>
-  <main>
-    <footer></footer>
-    <h1 class="pageone__title">¿Estás listo para horas de diversión?</h1>
-    <!-- se crea la clase para poder llamar este elemento en el CSS-->
+    <header>
+        <nav></nav>
+    </header>
+    <main>
+        <footer></footer>
+        <h1 class="pagetwo__title"> Antes de iniciar necesitamos validar tu pase para jugar</h1>
+        <h2 class="pagetwo__subtitle"> Ingresa el número de tu tarjeta</h2>
 
-     <section>
-      <!-- es una mejor practica que usar el div-->
-      </section>
-  </main>
-  <p>
-  <form action="" >
-  <label for="nameUsuar">
-    <span class="pageone__box"> Ingresa tu nombre</span>
-    <!-- se usa para la pregunta que será visible para el usuario-->
-    </p>
-    <input class="pageone__box.ingreso" type="text" name="nameUsuar" value="" autocomplete="name" placeholder="Ingresa tu nombre" required>
-    <!-- Placeholder: lo usamos para las letras que va sobre el campo a llenar -->
+<p>
+<input type="number" name="inputnumberr" class="inputnumber" id="inputnumber" placeholder="Ingresa tu numero de tarjeta" required>
+<!-- Placeholder: lo usamos para las letras que va sobre el campo a llenar -->
     <!--value sirve para saber cual fue el dato que me envio el usuario cuando lo envio -->
     <!-- required ayuda a que sea un campo obligatorio  -->
-    </label>
-    <p>
-      <button class="pageone__button" id="pageone__button" type="button"> </button>
-        <a href="./page2.html"  title="validación">INICIAR</a>
-      
-      <!-- Es mejor utilizar el botón button que type submit pues el primero permite ser personalizado y el segundo no-->
-      <!-- a,href se emplea para la creación de enlaces directos dentro de la página HTML-->
-    </p>
-  </form>
+</p>
+        <p>
+            <button class="pagetwo__button" id="pagetwo__button" type="button" name="pagetwo__button"> VALIDAR
+            </button>
+            <!-- Recuerda que es mejor usar Button porque este se puede modificasr en el HTML-->
+            <!-- Recuerda que usas la clase para poder llamarlo al CSS-->
+            <!-- a,href se emplea para la creación de enlaces directos dentro de la página HTML-->
+        </p>
+        
 
-    <script src="index.js" type="module"></script>
+        <!--<header>
+            <nav>
+                <ul class="main-nav">
+                    <li class="main--nav_item"><a href="">Home </a></li>
+                    <li class="main--nav_item"><a href="">Validator </a></li>
+                    <li class="main--nav_item"><a href="">Finish </a></li>
+                    <li class="main--nav_item"><a href=""> Landypage</a></li>
+                </ul>
 
+            </nav>
+
+
+        </header> -->
+
+         <script src="index.js" type="module"></script> 
 </body>
-
-
 
 </html>
