@@ -19,10 +19,27 @@ const validator = {
         reversed[i] = reversed[i] - 9;
       }
     }
-    console.log ("finalizado" , reversed)
+    console.log("finalizado", reversed);
+
+    //var convirtiendoString =parseInt(reversed)
+    //console.log(convirtiendoString)
+
+    let sumaResultados = 0;
+    for (let i = 0; i < reversed.length; i++) {
+      sumaResultados += +reversed[i];
+    }
+    console.log(sumaResultados);
+
+    if (sumaResultados % 10 === 0) {
+      alert("Lo lograste");
+      console.log("yes", sumaResultados);
+    } else {
+      alert("oh no");
+    }
   },
 
-  // Intentar enmascarar los números
+  // Enmascarar los numeros 
+
   maskify: function (arrayobtenerdatos) {
     if (arrayobtenerdatos.length < 6) return arrayobtenerdatos;
     const cuatroUltimosNumeros = arrayobtenerdatos.substr(-4);

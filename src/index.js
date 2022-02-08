@@ -3,7 +3,7 @@ import validator from './validator.js';
 function obtenerdatos(){
 let arrayobtenerdatos = new Array (); //Genere un array para poder dividir los elementos obtenidos
 arrayobtenerdatos = document.getElementById("inputnumber").value; //Aquí estoy vinculando el html con el js
-alert("Iniciar la validación"); 
+//alert("Iniciar la validación"); 
 validator.isValid(arrayobtenerdatos) //Relacionar al validador con el js y validador 
 validator.maskify(arrayobtenerdatos)
 console.log(arrayobtenerdatos) //Evidenciar los números al ser digitados 
