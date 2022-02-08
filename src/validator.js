@@ -1,73 +1,38 @@
 const validator = {
-  isValid: function (arrayobtenerdatos){
-  //Esta función lo que hace es relacionar el indexjs con el validadorjs 
-console.log ("estoy en Valid")
+  isValid: function (arrayobtenerdatos) {
+    //Esta función lo que hace es relacionar el indexjs con el validadorjs
+    console.log("estoy en Valid");
 
-//Aquí estoy intentando separar los números para que sean caracteres independientes 
-var datosindividuales = Array.from(arrayobtenerdatos);
-console.log(datosindividuales)
-const reversed = datosindividuales.reverse();
-console.log('datosindividuales:', datosindividuales);
+    //Aquí estoy intentando separar los números para que sean caracteres independientes
+    var datosindividuales = Array.from(arrayobtenerdatos);
+    console.log(datosindividuales);
+    const reversed = datosindividuales.reverse();
+    console.log("datosindividuales:", datosindividuales);
 
-// Intentar enmascarar los números
+    for (let i = 0; i < reversed.length; i++) {
+      if (i % 2 != 0) {
+        reversed[i] = 2 * reversed[i];
 
-function maskify(arrayobtenerdatos){
-  //if (arrayobtenerdatos.length < 12) return arrayobtenerdatos;
-	const cuatroUltimosNumeros = arrayobtenerdatos.substr(-4);
-	const primerosNumeros = arrayobtenerdatos
-	.substr(1, arrayobtenerdatos.length - 5)
-  .replace(/\d/g, '#');
-	return `${primerosNumeros}${cuatroUltimosNumeros}`;
-  console.log(maskify)
-}
+        //console.log("this is" + reversed[i], "en la posición ", i);
+      }
+      if (reversed[i] > 9) {
+        reversed[i] = reversed[i] - 9;
+      }
+    }
+    console.log ("finalizado" , reversed)
+  },
 
-// Intentar sumar los elementos de un array 
-
-
-// este intento lo unico que hizo fue contar la cantidad de los elementos del array 
-//const sumar = [datosindividuales];
-//let sum = 0; 
-//for (let i=0; i <sumar.length; i++) {
-//sum += sumar[i];
-//}
-//console.log(sumar);
-//SI FUNCIONO 
-
-
-// vamos con el intento 2 de sumar // 
-
-//const sumando = [datosindividuales]
-//const reducer = (accumulator, curr) => accumulator + curr;
-//console.log(sumando.reduce(reducer));
-
-
-// vamos como el intento 3 
-
-//var arreglo = [arrayobtenerdatos];
-//var sumando =0;
-//for ( var i = 0; i < 4; i++){
-//arreglo [i]= (arrayobtenerdatos);
-  //arreglo [i] = Number (prompt ("ingresa"));
- //sumando =  sumando + arreglo[i];
-//
-//console.log(sumando)
-//}
-
-
-// VAMOS POR EL 4 INTENTO 
-//var total = [datosindividuales].reduce(function(a, b){ return a + b; });
-//console.log(total)
-
-let ubicandodatos = [(datosindividuales) (0, 2, 4, 6, 8,) false];
-
-alert( ubicandodatos.indexOf(0) ); // 1
-alert( ubicandodatos.indexOf(false) ); // 2
-alert( ubicandodatos.indexOf(null) ); // -1
-
-alert( ubicandodatos.includes(1) ); // true
-
-
-
-}};
+  // Intentar enmascarar los números
+  maskify: function (arrayobtenerdatos) {
+    if (arrayobtenerdatos.length < 6) return arrayobtenerdatos;
+    const cuatroUltimosNumeros = arrayobtenerdatos.substr(-4);
+    const primerosNumeros = arrayobtenerdatos.substr(0, 0);
+    const enmascarar = arrayobtenerdatos
+      .substr(0, arrayobtenerdatos.length - 4)
+      .replace(/\d/g, "#");
+    console.log(`${primerosNumeros}${enmascarar}${cuatroUltimosNumeros}`);
+    return `${primerosNumeros}${enmascarar}${cuatroUltimosNumeros}`;
+  },
+};
 
 export default validator;
