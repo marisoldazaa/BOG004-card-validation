@@ -23,6 +23,7 @@ const validator = {
 
     //var convirtiendoString =parseInt(reversed)
     //console.log(convirtiendoString)
+    
 
     let sumaResultados = 0;
     for (let i = 0; i < reversed.length; i++) {
@@ -31,10 +32,10 @@ const validator = {
     console.log(sumaResultados);
 
     if (sumaResultados % 10 === 0) {
-      alert("Lo lograste");
+      alert("¡Felicitaciones! ¡Qué inicie la diversión!");
       console.log("yes", sumaResultados);
     } else {
-      alert("oh no");
+      alert("¡Lo sentimos! Tu tarjeta no es válida");
     }
   },
 
